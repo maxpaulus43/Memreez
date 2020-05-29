@@ -2,41 +2,28 @@
 //  FeedViewController.swift
 //  Memreez
 //
-//  Created by Paulus, Max on 5/26/20.
+//  Created by Paulus, Max on 5/29/20.
 //  Copyright © 2020 Macho. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController, UICollectionViewDataSource {
+class FeedViewController: UITableViewController {
+    var posts: [Post] = []
     
-    @IBOutlet weak var imageFeedCollectionView: UICollectionView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func addPost(post: Post) {
+        self.posts.append(post)
+        self.tableView.reloadData()
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let items: [UIColor] = [
-            .green,.black, .blue, .red
-        ]
-        let cell = UICollectionViewCell();
-        cell.backgroundColor = items[indexPath.item % 4];
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let post = posts[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ImagePostCell") as! ImagePostCell
+        cell.setPost(post: post)
         return cell
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

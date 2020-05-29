@@ -15,8 +15,10 @@
 		9D40F741247DFDA00080904D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D40F73F247DFDA00080904D /* LaunchScreen.storyboard */; };
 		9D40F74C247DFDA00080904D /* MemreezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F74B247DFDA00080904D /* MemreezTests.swift */; };
 		9D40F757247DFDA00080904D /* MemreezUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F756247DFDA00080904D /* MemreezUITests.swift */; };
-		9D40F765247E077D0080904D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F764247E077D0080904D /* FeedViewController.swift */; };
-		9D40F767247E0B590080904D /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F766247E0B590080904D /* ShareViewController.swift */; };
+		9D40F765247E077D0080904D /* RootViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F764247E077D0080904D /* RootViewConroller.swift */; };
+		9DD606502481A55600A2270F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6064F2481A55600A2270F /* FeedViewController.swift */; };
+		9DD606522481AD7000A2270F /* ImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD606512481AD7000A2270F /* ImagePostCell.swift */; };
+		9DD606542481AE9A00A2270F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD606532481AE9A00A2270F /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,10 @@
 		9D40F752247DFDA00080904D /* MemreezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemreezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D40F756247DFDA00080904D /* MemreezUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemreezUITests.swift; sourceTree = "<group>"; };
 		9D40F758247DFDA00080904D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D40F764247E077D0080904D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		9D40F766247E0B590080904D /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9D40F764247E077D0080904D /* RootViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewConroller.swift; sourceTree = "<group>"; };
+		9DD6064F2481A55600A2270F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9DD606512481AD7000A2270F /* ImagePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePostCell.swift; sourceTree = "<group>"; };
+		9DD606532481AE9A00A2270F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +109,10 @@
 			children = (
 				9D40F731247DFD9E0080904D /* AppDelegate.swift */,
 				9D40F733247DFD9E0080904D /* SceneDelegate.swift */,
-				9D40F764247E077D0080904D /* FeedViewController.swift */,
-				9D40F766247E0B590080904D /* ShareViewController.swift */,
+				9D40F764247E077D0080904D /* RootViewConroller.swift */,
+				9DD6064F2481A55600A2270F /* FeedViewController.swift */,
+				9DD606512481AD7000A2270F /* ImagePostCell.swift */,
+				9DD606532481AE9A00A2270F /* Post.swift */,
 				9D40F737247DFD9E0080904D /* Main.storyboard */,
 				9D40F73D247DFDA00080904D /* Assets.xcassets */,
 				9D40F73F247DFDA00080904D /* LaunchScreen.storyboard */,
@@ -266,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D40F73C247DFD9E0080904D /* Memreez.xcdatamodeld in Sources */,
-				9D40F765247E077D0080904D /* FeedViewController.swift in Sources */,
-				9D40F767247E0B590080904D /* ShareViewController.swift in Sources */,
+				9D40F765247E077D0080904D /* RootViewConroller.swift in Sources */,
+				9DD606502481A55600A2270F /* FeedViewController.swift in Sources */,
+				9DD606542481AE9A00A2270F /* Post.swift in Sources */,
+				9DD606522481AD7000A2270F /* ImagePostCell.swift in Sources */,
 				9D40F732247DFD9E0080904D /* AppDelegate.swift in Sources */,
 				9D40F734247DFD9E0080904D /* SceneDelegate.swift in Sources */,
 			);
@@ -445,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UPQ8J7LV56;
 				INFOPLIST_FILE = Memreez/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UPQ8J7LV56;
 				INFOPLIST_FILE = Memreez/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
