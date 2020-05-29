@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		9D40F732247DFD9E0080904D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F731247DFD9E0080904D /* AppDelegate.swift */; };
 		9D40F734247DFD9E0080904D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F733247DFD9E0080904D /* SceneDelegate.swift */; };
-		9D40F736247DFD9E0080904D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F735247DFD9E0080904D /* ViewController.swift */; };
 		9D40F739247DFD9E0080904D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D40F737247DFD9E0080904D /* Main.storyboard */; };
 		9D40F73C247DFD9E0080904D /* Memreez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F73A247DFD9E0080904D /* Memreez.xcdatamodeld */; };
 		9D40F73E247DFDA00080904D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D40F73D247DFDA00080904D /* Assets.xcassets */; };
 		9D40F741247DFDA00080904D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D40F73F247DFDA00080904D /* LaunchScreen.storyboard */; };
 		9D40F74C247DFDA00080904D /* MemreezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F74B247DFDA00080904D /* MemreezTests.swift */; };
 		9D40F757247DFDA00080904D /* MemreezUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F756247DFDA00080904D /* MemreezUITests.swift */; };
+		9D40F765247E077D0080904D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F764247E077D0080904D /* FeedViewController.swift */; };
+		9D40F767247E0B590080904D /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D40F766247E0B590080904D /* ShareViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		9D40F72E247DFD9E0080904D /* Memreez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memreez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D40F731247DFD9E0080904D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D40F733247DFD9E0080904D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D40F735247DFD9E0080904D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D40F738247DFD9E0080904D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D40F73B247DFD9E0080904D /* Memreez.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memreez.xcdatamodel; sourceTree = "<group>"; };
 		9D40F73D247DFDA00080904D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		9D40F752247DFDA00080904D /* MemreezUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemreezUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D40F756247DFDA00080904D /* MemreezUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemreezUITests.swift; sourceTree = "<group>"; };
 		9D40F758247DFDA00080904D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D40F764247E077D0080904D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9D40F766247E0B590080904D /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,8 @@
 			children = (
 				9D40F731247DFD9E0080904D /* AppDelegate.swift */,
 				9D40F733247DFD9E0080904D /* SceneDelegate.swift */,
-				9D40F735247DFD9E0080904D /* ViewController.swift */,
+				9D40F764247E077D0080904D /* FeedViewController.swift */,
+				9D40F766247E0B590080904D /* ShareViewController.swift */,
 				9D40F737247DFD9E0080904D /* Main.storyboard */,
 				9D40F73D247DFDA00080904D /* Assets.xcassets */,
 				9D40F73F247DFDA00080904D /* LaunchScreen.storyboard */,
@@ -262,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D40F736247DFD9E0080904D /* ViewController.swift in Sources */,
 				9D40F73C247DFD9E0080904D /* Memreez.xcdatamodeld in Sources */,
+				9D40F765247E077D0080904D /* FeedViewController.swift in Sources */,
+				9D40F767247E0B590080904D /* ShareViewController.swift in Sources */,
 				9D40F732247DFD9E0080904D /* AppDelegate.swift in Sources */,
 				9D40F734247DFD9E0080904D /* SceneDelegate.swift in Sources */,
 			);
